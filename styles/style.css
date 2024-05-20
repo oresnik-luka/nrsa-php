@@ -1,0 +1,361 @@
+:root{
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    margin: 0;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em 3em;
+    background-color: #333;
+    box-shadow: 0 2px 5px 1px rgba(64, 60, 67, .16);
+}
+
+.header h3{
+    margin: 0;
+    font-size: 1.75em;
+}
+
+.header h3 a{
+    margin: 0;
+}
+
+.header a{
+    text-decoration: none;
+    color: white;
+    margin-left: 2em;
+
+}
+
+.header .user, .header .add{
+    background-color: white;
+    color: black;
+    border-radius: .5em;
+    padding: .25em 1em;
+    display: flex;
+}
+
+.header .add{
+    margin-right: 2em;
+    background-color: #f5f200;
+    font-weight: 700;
+    color: black;
+}
+
+.header .add:hover{
+    cursor: pointer;
+}
+
+.header .navButtons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header .user{
+    background-color: white;
+    color: black;
+    border-radius: .5em;
+    padding: .25em 1em;
+    display: flex;
+}
+
+.header img{
+    height: 1.5em;
+    margin-right: 0.5em;
+}
+
+.header a:hover{
+    color: #f5f200;
+}
+
+.header .active{
+    color: #f5f200;
+}
+
+.content{
+    padding: 1.5em 3em;
+    min-height: 40.15em;
+}
+
+table{
+    width: 60%;
+    table-layout: fixed;
+
+}
+
+#search{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+td{
+    height: 2em;
+    padding: .5em;
+}
+
+td *{
+    width: 100%;
+    height: 100%;
+}
+
+.chatBtn{
+    display: flex;
+    cursor: pointer;
+}
+
+.footer{
+    background-color: #333;
+    color: white;
+    padding: 2.5em 3em;
+    box-shadow: 0 2px 5px 1px rgba(64, 60, 67, .16);
+}
+
+.ads{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.ad{
+    background-color: lightgrey;
+    width: fit-content;
+    height: fit-content;
+    border-radius: .5em;
+    padding: 2em;
+    margin-top: 5em;
+    box-shadow: 0 2px 5px 1px rgba(64, 60, 67, .16);
+}
+
+.ad .created{
+    color: #666;
+}
+
+.ad .info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ad .user{
+    background-color: #333;
+    color: white;
+    width: fit-content;
+    display: flex;
+    flex-direction: row-reverse;
+    padding: .5em 1em;
+    border-radius: .5em;
+}
+
+.ad .user img{
+    width: 1em;
+    margin-right: .5em;
+}
+
+.ad a{
+    display: inline-block;
+    width: fit-content;
+}
+
+.ad .brand{
+    font-size: 1.75em;
+    font-weight: 600;
+    margin-right: .75em;
+}
+
+.ad .model{
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+.ad .carinfo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.ad .price{
+    font-size: 1.1em;
+}
+
+.ad .img img{
+    width: 25em;
+    border-radius: .5em;
+    box-shadow: 0 2px 5px 1px rgba(64, 60, 67, .16);
+}
+
+.chat{
+    display: flex;
+    border-radius: .5em;
+    overflow: hidden;
+    height: inherit;
+    background-color: lightgrey;
+    box-shadow: 0 2px 5px 1px rgba(64, 60, 67, .16);
+}
+
+.chat .side{
+    flex: 1;
+    border-right: .1em solid #aaa;
+    background-color: #bbb;
+    box-shadow: 0 2px 5px 1px rgba(64, 60, 67, .16);
+}
+
+.chat .side h3{
+    border-bottom: .1em solid #aaa;
+    margin: 0;
+    padding: 1.5em 0;
+    display: flex;
+    justify-content: center;
+}
+
+.chat .content{
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    height: 40em;
+}
+
+.chat .contact{
+    cursor: pointer;
+    border-bottom: .1em solid #aaa;
+    padding: 1em 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.chat .history{
+    flex: 10;
+}
+
+.chat .chatBox{
+    flex: 1;
+}
+
+.chatBox{
+    display: flex;
+}
+
+.chatBox input[type="text"]{
+    flex: 6;
+    padding: .5em 1em;
+}
+
+.chatBox input[type="submit"]{
+    flex: 1;
+}
+
+.selected{
+    background-color: grey;
+}
+
+.history{
+    height: inherit;
+    overflow-y: scroll;
+}
+
+.messageLine{
+    width: 100%;
+    display: flex;
+    margin: .5em 0;
+}
+
+.message{
+    background-color: #0096FF;
+    color: white;
+    width: fit-content;
+    word-break: break-all;
+    display: flex;
+    padding: 1em 2em;
+    border-radius: .5em;
+    box-shadow: 0 2px 5px 1px rgba(64, 60, 67, .16);
+    margin: 0 2em;
+}
+
+.messageLeft{
+    color: black;
+    background-color: white;
+}
+
+.messageLine:has(.messageLeft){
+    justify-content: flex-start;
+}
+
+.messageLine:has(.messageRight){
+    justify-content: flex-end;
+}
+
+.chat input[type="text"]{
+    border-top-left-radius: .25em;
+    border-bottom-left-radius: .25em;
+    border: 0;
+    outline: 0;
+}
+
+.chat input[type="submit"]{
+    background-color: #f5f200;
+    color: black;
+    border: 0;
+    border-top-right-radius: .25em;
+    border-bottom-right-radius: .25em;
+    font-weight: 700;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+}
+
+.searchBtn{
+    background-color: #f5f200;
+    color: black;
+    border: 0;
+    border-radius: .25em;
+    font-weight: 700;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+    box-shadow: 0 2px 5px 1px rgba(64, 60, 67, .16);
+}
+
+button[type="submit"]{
+    background-color: #f5f200;
+    color: black;
+    border: 0;
+    border-radius: .25em;
+    font-weight: 700;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+    box-shadow: 0 2px 5px 1px rgba(64, 60, 67, .16);
+    padding: 1em 2em;
+}
+
+form.defaultForm{
+    background-color: lightgray;
+    width: fit-content;
+    padding: 3em;
+    box-shadow: 0 2px 5px 1px rgba(64, 60, 67, .16);
+    border-radius: .25em;
+}
+
+.defaultForm label:not(:first-child){
+    display: inline-block;
+    margin-top: 1em;
+}
+
+.defaultForm button{
+    margin-top: 2em;
+}
+
+.defaultForm input, .defaultForm select{
+    border: .1em solid #333;
+    border-radius: .25em;
+    outline: 0;
+    padding: .5em 1em;
+    margin-left: 1em;
+}
+#addAdForm{
+    display:flex;
+}
